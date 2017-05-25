@@ -4,14 +4,13 @@ export default class About extends React.Component {
   render() {
     console.log("about");
     return (
-      <div class="container">
         <div class="well">
+            <h3>Thanks for checking out my application</h3>
             <div class="media">
                 <div class="media-left media-middle">
                     <img class="media-object img-thumbnail" src="images/profile_pic.jpg" width="150px" height="150px" alt="Brents Profile Picture"/>
                 </div>
                 <div class="media-body">
-                    <h3>Thanks for checking out my application</h3>
                     <p>Hello, my name is Brent and I am an enthusiastic software developer with a background in billing systems, control systems, audio and fitness. I am looking for company that values collaboration as part of their development process.</p>
                     <p>I have developed in a range of object-orientated languages such as C++ and C# and have accessed data from a range of databases including SQL Server, MySQL and MS Access.</p>
                     <p>I am looking to further develop my web application skills particularly using .net and angular2 frameworks but am always willing and wanting to learn new technologies to add to my set of skills.</p>
@@ -36,7 +35,6 @@ export default class About extends React.Component {
                 </ul>
             </div>
         </div>
-      </div>
     );
   }
 }

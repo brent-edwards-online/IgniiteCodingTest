@@ -3,6 +3,18 @@ import React from "react";
 import Article from "../components/Article";
 
 export default class Options extends React.Component {
+  constructor() {
+        super();
+        this.state = { items: [] };
+    }
+    
+    componentDidMount() {
+        fetch(`http://localhost:8088/api/this/is/an/api/call`) 
+            .then(result=> {
+                this.setState({items:result.json()});
+            });
+    }
+    
   render() {
     const { query } = this.props.location;
     const { params } = this.props;
@@ -21,9 +33,8 @@ export default class Options extends React.Component {
     ].map((title, i) => <Article key={i} title={title}/> );
 
     return (
-      <div>
+      <div class="container">
         <h1>Flight Options</h1>
-        article: {article}, date: {date}, filter: {filter}
         <div class="row">{Articles}</div>
       </div>
     );

@@ -1,4 +1,4 @@
-# Flight Options Excercise
+# Flight Options Exercise
 
 Supplied:
 
