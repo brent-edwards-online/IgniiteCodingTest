@@ -1,5 +1,13 @@
 # IgniteCodingTest
 
+## To install and run
+
+1. Clone this repository
+2. Change to Application folder
+3. Run > npm install
+4. Run > npm run dev
+5. Navigate to localhost:8080 in browser
+
 ## Supplied:
 
 1. `flight-options.json`: A JSON array of return flights between Brisbane and Fiji.
