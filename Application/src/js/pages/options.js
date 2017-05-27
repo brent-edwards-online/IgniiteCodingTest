@@ -20,16 +20,18 @@ export default class Options extends React.Component {
     }
     
   render() {
-    const { query } = this.props.location;
-    //const { params } = this.props;
-    //const { article } = params;
-    //const { date, filter } = query;
-
     const FlightOptions = this.state.flights.map((flight, i) => <Flight key={i} flight={flight} carrier={this.state.carriers.find(x => x.Id === flight.CarrierId)}/> );
-    
     return (
       <div class="container">
         <h1>Flight Options</h1>
+        <div id="flight-options-heading" class="row">
+          <div class="col-lg-6 text-center">
+            <h1>Brisbane to Nadi</h1>
+          </div>
+          <div class="col-lg-6 text-center">
+            <h1>Nadi to Brisbane</h1>
+          </div>
+        </div>
         <div class="row">{FlightOptions}</div>
       </div>
     );

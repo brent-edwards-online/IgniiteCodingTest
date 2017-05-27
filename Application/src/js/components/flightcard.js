@@ -23,7 +23,7 @@ export default class FlightCard extends React.Component {
     if(segments != null)
     {
       return (
-        <div class="flight-card col-md-5">
+        <div class="flight-card">
           <div class="data-container">
             <h1>{carrierName}</h1>
             <FlightTime segments={segments} />
@@ -35,7 +35,7 @@ export default class FlightCard extends React.Component {
     }
     else{
       return (
-        <div class="flight-card col-md-5 display-none">
+        <div class="flight-card display-none">
           <div class="data-container">
             <h1>{carrierName}</h1>
             <h2>No Flight</h2>

@@ -10,20 +10,22 @@ export default class RouteDetails extends React.Component {
     const segments = this.props.segments;
     
     let html = [];
+    
+    let initialPort = segments[0].OriginCode;
+    html.push(<Port port={initialPort} />);
+              
     for(var idx = 0; idx < segments.length; idx++)
     {
       let segment = segments[idx];
-      let port = segment.OriginCode;
-      let flightduration = segment.FlightDuration;
-      let duration = segment.StopOverDuration;
+      let port = segment.DestinationCode;
+      let flightDuration = segment.FlightDuration;
+      let stopOverDuration = segment.StopOverDuration;
       
-      html.push(<Port port={port} />);
-      html.push(<PortFlight />);          
+      html.push(<PortFlight duration={flightDuration} />);          
+      html.push(<Port port={port} duration={stopOverDuration} />);
+      
     }
-                
-    let finalDestination = segments[segments.length-1].DestinationCode;
-    html.push(<Port port={finalDestination} />);
-                
+                                
     return (
       <div class="route-details">
         {html}

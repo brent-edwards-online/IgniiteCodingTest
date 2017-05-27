@@ -10,6 +10,9 @@ export default class FlightDuration extends React.Component {
     }
     let hours = Math.floor(duration / 60);
     let minutes = duration % 60;
+    if(minutes < 10){
+        minutes = "0" + minutes;
+    }
   
     return (
       <div class="flight-duration">{hours}h {minutes}m</div>

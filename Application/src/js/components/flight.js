@@ -12,9 +12,13 @@ export default class Flight extends React.Component {
     const carrier = this.props.carrier;
 
     return (
-      <div class="flight">
-        <FlightCard direction="outbound" flightdetail={flight} carriername={carrier.Name}/>
-        <FlightCard direction="inbound" flightdetail={flight} carriername={carrier.Name}/>
+      <div class="flight container">
+        <div class="col-md-6 col-sm-12">
+          <FlightCard direction="outbound" flightdetail={flight} carriername={carrier.Name}/>
+        </div>  
+        <div class="col-md-6 col-sm-12">
+          <FlightCard direction="inbound" flightdetail={flight} carriername={carrier.Name}/>
+        </div>
       </div>
     );
   }
