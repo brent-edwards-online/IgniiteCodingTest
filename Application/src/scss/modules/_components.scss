@@ -119,6 +119,10 @@ div > .flight {
 }
 
 /* Flight Time */
+.flight-time {
+  
+}
+
 .flight-time > h1 {
   color: $col-grey-light;
   font-size: 30px;
@@ -127,12 +131,23 @@ div > .flight {
 .flight-time > h2 {
   color: $col-grey-light;
   font-weight:bold;
+  margin-bottom: 0px;
 }
 
 .flight-time span.font-normal {
   color: $col-grey-light;
   font-weight:normal;
   font-size: 25px;
+}
+
+/* Arrivale Time */
+.arrival-time {
+  color: $col-grey-light;
+  text-align: right;
+  font-weight:normal;
+  font-size: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 /* Route Details */
