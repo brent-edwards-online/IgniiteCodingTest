@@ -1,5 +1,9 @@
 # IgniteCodingTest
 
+## Working Online Demo
+
+https://brent-edwards-online.github.io
+
 ## To install and run
 
 1. Clone this repository
@@ -23,6 +27,3 @@ It should be written in TypeScript (ES6/7 acceptable as well) and should utilise
 
 Feel free to use any other open-source libraries that will help achieve the desired result. (LoDash/Underscore, Moment, Bootstrap etc.)
 
-## Online Demo
-
-https://brent-edwards-online.github.io
