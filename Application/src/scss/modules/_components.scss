@@ -1,3 +1,5 @@
+/* Navbar */
+
 .navbar-inverse {
   background: #303f9f;
   color: #ffffff;
@@ -36,4 +38,93 @@
 .navbar-inverse .navbar-nav .open .dropdown-menu {
   background-color: #303f9f;
   color: #eeeeee;
+}
+
+/* Footer */
+
+footer {
+  background: #303f9f;
+  color: #ffffff;
+}
+
+footer a{
+  color: white;
+  padding-left: 2px;
+}
+
+footer a:hover{
+ color: #9d9d9d; 
+}
+
+/* Flight */
+div > .flight {
+  width: 100%;
+  display: flex;
+}
+
+/* Flight Card */
+.display-none{
+  display: none;
+}
+
+.flight-card {
+  border-radius: 10px;
+  border: solid 2px $col-card-grey;
+  margin-bottom: 30px;
+  display: flex;
+  padding-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.data-container {
+  margin: 0 auto;
+}
+
+/* Flight Time */
+.flight-time > h1 {
+  color: $col-grey-light;
+  font-size: 30px;
+}
+
+.flight-time > h2 {
+  color: $col-grey-light;
+  font-weight:bold;
+}
+
+.flight-time span.font-normal {
+  color: $col-grey-light;
+  font-weight:normal;
+  font-size: 25px;
+}
+
+/* Route Details */
+.route-details {
+  display: flex;
+  
+}
+/* Port */
+.port {
+  color: $col-grey-light;
+  padding-right: 5px;
+  font-weight:normal;
+  font-size: 25px;
+}
+
+/* Port Flight */
+.port-flight {
+  color: $col-grey-light; 
+  padding-right: 5px;
+}
+
+.port-flight .fa{
+  color: $col-grey-light;
+  padding-top: 4px;
+}
+
+/* Flight Duration */
+.flight-duration {
+  color: $col-grey-light;
+  font-weight:bold;
+  font-size: 25px;
 }

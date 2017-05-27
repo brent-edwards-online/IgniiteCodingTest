@@ -2,7 +2,6 @@ import React from "react";
 
 export default class About extends React.Component {
   render() {
-    console.log("about");
     return (
         <div class="well">
             <h3>Thanks for checking out my application</h3>

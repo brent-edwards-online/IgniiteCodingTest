@@ -6,6 +6,9 @@ module.exports = {
   context: path.join(__dirname, "src"),
   devtool: debug ? "inline-sourcemap" : null,
   entry: "./js/app.js",
+  resolve: {
+    extensions: ['', '.js', '.ts']
+  },
   module: {
     loaders: [
       {
@@ -16,6 +19,11 @@ module.exports = {
           presets: ['react', 'es2015', 'stage-0'],
           plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'],
         }
+      },
+      { 
+        test: /\.tsx?$/, 
+        exclude: /(node_modules|bower_components)/,
+        loaders: ['babel-loader', 'ts-loader']
       }
     ]
   },
