@@ -1,12 +1,7 @@
 import React from "react";
-
 import FlightCard from "./flightcard";
 
 export default class Flight extends React.Component {
-  constructor() {
-        super();
-    }
-
   render() {
     const flight = this.props.flight;
     const carrier = this.props.carrier;

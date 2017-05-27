@@ -1,10 +1,6 @@
 import React from "react";
 
 export default class Port extends React.Component {
-  constructor() {
-        super();
-    }
-
   render() {
     const port = this.props.port;
     const duration = this.props.duration;
@@ -13,19 +9,17 @@ export default class Port extends React.Component {
     if(minutes < 10){
         minutes = "0" + minutes;
     }
-    
     let portclasses = "port"
-    
-    let html = [];
+    let tooltip = [];
     if(duration > 0)
     {
       portclasses += " port-stopover flight-tooltip";
-      html.push(<span class="tip">{hours}h {minutes}m stopover</span>);
+      tooltip.push(<span class="tip">{hours}h {minutes}m stopover</span>);
     }
       
     return (
       <div class={portclasses}>
-        {html}
+        {tooltip}
         {port}
       </div>
     );

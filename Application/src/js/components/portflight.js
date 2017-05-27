@@ -1,10 +1,6 @@
 import React from "react";
 
 export default class PortFlight extends React.Component {
-  constructor() {
-        super();
-    }
-
   render() {
     const duration = this.props.duration;
     let hours = Math.floor(duration / 60);
